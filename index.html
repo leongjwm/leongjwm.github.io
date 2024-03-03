@@ -2,16 +2,69 @@
 <html>
 <head>
     <title> Marcus </title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper">
-    <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis turpis at lorem accumsan, vel mollis ligula cursus. Curabitur quis justo nec ex tincidunt mattis eget id lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis orci lacinia, aliquam lacus eu, elementum metus. Nulla et pharetra neque. Quisque quis vulputate sapien. Praesent vel lacus vel lectus rutrum mattis. Donec venenatis orci eget ipsum cursus, vel dapibus velit efficitur. Cras dapibus tortor velit, in porttitor lacus tristique ut.
+   <nav>
+        <div id="logo"><a href="#home"><img src="logo.svg"/></a></div>
+        <ul id="nav-elements">
+            <li><a id="home-button" href="#home">Home</a></li>
+            <li><a href="#work" class="button">Work</a></li>
+            <li><a href="#about" class="button">About</a></li>
+            <li><a href="#connect" class="button">Connect</a></li>
+        </ul>
+    </nav>
+    <div id="home-div"> 
+        <div id="greeting">
+            <p>Hi<span id="blink">|</span></p>
+        </div>
+        <div id="intro">
+            <p>My name is Marcus.</p>
+            <p>I work as a Data Practice Analyst &#128187;, enjoy sports &#127939; &#127946; such as running and calisthenics, and enjoy the local dishes here (sliced fish soup, anyone? &#128523;). </p>
+            <p>I also love spending time with my family during the weekends, and upgrading my skills in my spare time!</p>
+        </div>
     </div>
-    <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis turpis at lorem accumsan, vel mollis ligula cursus. Curabitur quis justo nec ex tincidunt mattis eget id lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis orci lacinia, aliquam lacus eu, elementum metus. Nulla et pharetra neque. Quisque quis vulputate sapien. Praesent vel lacus vel lectus rutrum mattis. Donec venenatis orci eget ipsum cursus, vel dapibus velit efficitur. Cras dapibus tortor velit, in porttitor lacus tristique ut.
+    <div id="work-div" class="content">
+        <div class="header">
+            <h1>Projects</h1>
+        </div>
+        <div id="projects">
+            <div class="project">
+                <p class="project-name">Detection of Vessels and Kayaks with YOLOv3</p>
+                <div class="description">
+                    <p>A collaboration between NUS (National University of Singapore) and GovTech (Government Technology Agency of Singapore), students had to complete a object detection project.</p>
+                    <p>Skills: Object Detection, Python, Docker, Linux</p>
+                </div>
+            </div>
+            <div class="project">
+                <p class="project-name">COVID-19 Data Visualisation Project</p>
+                <div class="description" id="description">
+                    <p>A competition organised within NUS, where students had to make various insights based on the COVID-19 dataset given. </p>
+                    <p>Skills: Python, Data Visualisation, Traditional Machine Learning</p>
+                </div>
+            </div>
+            <div class="project">
+                <p class="project-name">ButterSnapped!</p>
+                <div class="description">
+                    <p>A project involving image classification of different butterfly species, involving both traditional machine learning methods (e.g., SVM) and deep learning methods (e.g., MLP, CNN).</p>
+                    <p>Skills: Tensorflow, Python, Web Scraping, Image Classification</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="about-div" class="content">
+        <div class="header">
+            <h1>About</h1>
+        </div>
     </div>
+    <div id="connect-div" class="content">
+        <div class="header">
+            <h1>Connect</h1>
+        </div>
+    </div>
+    <!--testing by Leong Jia Wei, Marcus (2024)-->
+    <script src="main.js"></script>
 </body>
 </html>
