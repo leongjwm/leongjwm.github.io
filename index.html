@@ -1,70 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Marcus </title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title> Marcus' Data Science Portfolio </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
 <body>
-   <nav>
-        <div id="logo"><a href="#home"><img src="logo.svg"/></a></div>
+    <!--NAVIGATION BAR-->
+    <nav>
         <ul id="nav-elements">
-            <li><a id="home-button" href="#home">Home</a></li>
-            <li><a href="#work" class="button">Work</a></li>
-            <li><a href="#about" class="button">About</a></li>
-            <li><a href="#connect" class="button">Connect</a></li>
+            <li><a id="home-button" href="#home">HOME</a></li>
+            <li><a href="#aboutme" class="button">ABOUT ME</a></li>
+            <li><a href="#skills" class="button">SKILLS</a></li>
+            <li><a href="#projects" class="button">PROJECTS</a></li>
         </ul>
     </nav>
+
+    <!--HOME PAGE-->
     <div id="home-div"> 
-        <div id="greeting">
-            <p>Hi<span id="blink">|</span></p>
+        <div id="title">
+            <p>Marcus' Data Science Portfolio</p>
         </div>
-        <div id="intro">
-            <p>My name is Marcus.</p>
-            <p>I work as a Data Practice Analyst &#128187;, enjoy sports &#127939; &#127946; such as running and calisthenics, and enjoy the local dishes here (sliced fish soup, anyone? &#128523;). </p>
-            <p>I also love spending time with my family during the weekends, and upgrading my skills in my spare time!</p>
+        <div id="start">
+            <p>SCROLL DOWN TO BEGIN</p>
         </div>
     </div>
-    <div id="work-div" class="content">
-        <div class="header">
-            <h1>Projects</h1>
+
+    <!--ABOUT ME-->
+    <section id="aboutme">
+        <div class="section-content">
+          <div id="profile-picture-container">
+            <img src="images/marcus_at_sea.png" alt="profile picture"/>
+          </div>
+          <article>
+            <h1>
+                ABOUT ME
+            </h1>
+            <hr>
+            <p>
+              Hello there, I'm Marcus! I graduated from the National University of Singapore (NUS) in 2022 with a Bachelor of Science (Honours) in Data Science and Analytics
+              and currently work as a Data Analyst.
+            </p>
+            <p>
+              Presently, I am continuing to hone my knowledge on Deep Learning and its various applications; my previous experiences include projects which
+              incorporate various tasks in Natural Language Processing and Computer Vision. On the analytics side, I have also handled projects requiring 
+              skills such as Data Visualisation, Time Series Analysis, and Databases. 
+            </p>
+            <p>
+              While away from work, I lead an active lifestyle with activities such as calisthenics and running!
+            </p>
+          </article>
         </div>
-        <div id="projects">
-            <div class="project">
-                <p class="project-name">Detection of Vessels and Kayaks with YOLOv3</p>
-                <div class="description">
-                    <p>A collaboration between NUS (National University of Singapore) and GovTech (Government Technology Agency of Singapore), students had to complete a object detection project.</p>
-                    <p>Skills: Object Detection, Python, Docker, Linux</p>
-                </div>
-            </div>
-            <div class="project">
-                <p class="project-name">COVID-19 Data Visualisation Project</p>
-                <div class="description" id="description">
-                    <p>A competition organised within NUS, where students had to make various insights based on the COVID-19 dataset given. </p>
-                    <p>Skills: Python, Data Visualisation, Traditional Machine Learning</p>
-                </div>
-            </div>
-            <div class="project">
-                <p class="project-name">ButterSnapped!</p>
-                <div class="description">
-                    <p>A project involving image classification of different butterfly species, involving both traditional machine learning methods (e.g., SVM) and deep learning methods (e.g., MLP, CNN).</p>
-                    <p>Skills: Tensorflow, Python, Web Scraping, Image Classification</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="about-div" class="content">
-        <div class="header">
-            <h1>About</h1>
-        </div>
-    </div>
-    <div id="connect-div" class="content">
-        <div class="header">
-            <h1>Connect</h1>
-        </div>
-    </div>
+      </section>
     <!--testing by Leong Jia Wei, Marcus (2024)-->
-    <script src="main.js"></script>
 </body>
 </html>
