@@ -40,6 +40,7 @@ nav {
 #nav-elements {
     display: flex;
     flex-direction: row;
+    @media (max-width: 500px) { display: none; } 
     flex-grow: 1;
     justify-content: center;
 }
@@ -63,6 +64,11 @@ nav {
 
 #nav-elements > li > a:hover {
     color: #fff;
+}
+
+.hamburger-menu {
+  display: none;
+  @media (max-width: 500px) { display: block; }
 }
 
 /* Styling for home page */
