@@ -19,11 +19,6 @@ section {
     src: url("./fonts/VCR_OSD_MONO_1.001.ttf") format('truetype');
 }
 
-@font-face {
-    font-family: "BebasNeue Regular";
-    src: url("./fonts/BebasNeue-Regular.ttf") format('truetype');
-}
-
 /* Styling for nav bar */
 nav {
     margin-top: -7px;
@@ -74,6 +69,8 @@ nav {
 @media screen and (max-width: 550px) {
   .hamburger-menu {
     display: block;
+    justify-content: right;
+    color: #ff0000;
   }
 }
 
