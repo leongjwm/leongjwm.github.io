@@ -40,9 +40,14 @@ nav {
 #nav-elements {
     display: flex;
     flex-direction: row;
-    @media (max-width: 500px) { display: none; } 
     flex-grow: 1;
     justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+  #nav-elements {
+    display: none;
+  }
 }
 
 #nav-elements > li {
@@ -66,9 +71,10 @@ nav {
     color: #fff;
 }
 
-.hamburger-menu {
-  display: none;
-  @media (max-width: 500px) { display: block; }
+@media screen and (max-width: 550px) {
+  .hamburger-menu {
+    display: block;
+  }
 }
 
 /* Styling for home page */
