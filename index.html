@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title> Marcus' Data Science Portfolio </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <script type = "text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
 <body>
-    <!--NAVIGATION BAR-->
-    <nav>
-        <ul id="nav-elements">
-            <li><a id="home-button" href="#home-div">HOME</a></li>  
+    <!--NAVIGATION BAR: DESKTOP-->
+    <nav class="desktop">
+        <ul id="nav-elements-desktop">
+            <li><a href="#home-div" class="button">HOME</a></li>  
             <li><a href="#aboutme" class="button">ABOUT ME</a></li>
             <li><a href="#skills" class="button">SKILLS</a></li>
             <li><a href="#projects" class="button">PROJECTS</a></li>
         </ul>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="hamburger-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </nav>
+
+    <!--NAVIGATION BAR: MOBILE-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <nav class="mobile">
+      <ul id="nav-elements-mobile">
+          <li><a href="#home-div" class="button">HOME</a></li>  
+          <li><a href="#aboutme" class="button">ABOUT ME</a></li>
+          <li><a href="#skills" class="button">SKILLS</a></li>
+          <li><a href="#projects" class="button">PROJECTS</a></li>
+      </ul>
     </nav>
 
     <!--HOME PAGE-->
@@ -58,5 +69,6 @@
         </div>
       </section>
     <!--testing by Leong Jia Wei, Marcus (2024)-->
+    <script src="main.js"></script>
 </body>
 </html>
