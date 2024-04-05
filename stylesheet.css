@@ -84,11 +84,14 @@ nav.mobile {
   padding-inline-start: 0px;
   margin-top: 5vh;
   display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
 }
 
 #nav-elements-mobile > li {
-  margin: 1vh;
   background-color: black;
+  margin-bottom: 1vh;
 }
 
 #nav-elements-mobile > li > a {
@@ -102,6 +105,7 @@ nav.mobile {
   width: 100vw;
   color: #ff0000;
   position: fixed;
+  display: inline-block;
   z-index: 2;
 }
 
