@@ -1,36 +1,46 @@
 /* General */
-body {
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
+/* :root {
+  --min-display-width: max(100vw, 310px);
+  --min-display-height: max(100vh, 370px);
+  --max-small-screen-width: 420px;
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
-.hidden {
-  display: none;
+body {
+  margin: 0;
 }
 
 section {
   padding: 0px max(3vw, 30px);
+  background-color: black;
 }
 
 /* Special fonts*/
 @font-face {
-  font-family: "VCR OSD Mono";
-  src: url("./fonts/VCR_OSD_MONO_1.001.ttf") format('truetype');
+  font-family: "UAV OSD Mono";
+  src: url("./fonts/UAV-OSD-Mono.ttf") format('truetype');
 }
 
-/* Styling for nav bar */
+@font-face {
+  font-family: "Blacklisted";
+  src: url("./fonts/Blacklisted.ttf") format('truetype');
+}
+
+/* Styling for nav bar (desktop) */
 nav.desktop {
   top: 0;
-  width: 98vw;
+  width: 100%;
   position: fixed;
   display: flex;
   flex-direction: row;
   height: 5vh;
   padding: 1.2vh 2vw;
-  background-color: #000;
+  background-color: #131516;
   align-items: center;
-  z-index: 2;
+  z-index: 100;
 }
 
 #nav-elements-desktop {
@@ -47,119 +57,130 @@ nav.desktop {
 
 #nav-elements-desktop > li > a {
   text-decoration: none;
-  font-family: "VCR OSD Mono";
-  font-size: 1.5em;
+  font-family: "UAV OSD Mono", "Courier New", "Lucida Console";
+  font-size: 1em;
   padding: 1vw;
   word-spacing: -5px;
-  color: #ff0000;
+  color: white;
 }
 
 #nav-elements-desktop > li > a:visited {
-  color: #ff0000;
+  color: white;
 }
 
 #nav-elements-desktop > li > a:hover {
-  color: #fff;
+  color: red;
 }
 
 /* Style the hamburger menu */
-.icon {
-  background: black;
-  color: #ff0000;
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 5vh;
+nav.mobile {
   top: 0;
-  padding-left: 10px;
-  padding-top: 10px;
-  z-index: 2;
+  position: fixed !important;
+  flex-direction: column;
+  width: 100%;
+  display: none;
+  background-color: #131516;
+  z-index: 100;
 }
 
-nav.mobile {
-  display: none;
+nav.mobile > a > img {
+  height: 36px;
+  width: 36px;
+  padding: 10px;
 }
 
 #nav-elements-mobile {
-  padding-inline-start: 0px;
-  margin-top: 5vh;
   display: none;
-  position: absolute;
-  background-color: black;
-  z-index: 2;
+  font-size: 30px;
+  flex: 2;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 #nav-elements-mobile > li {
-  background-color: black;
-  margin-bottom: 1vh;
+  list-style-type: none;
+  flex: 1;
 }
 
 #nav-elements-mobile > li > a {
+  font-family: "UAV OSD Mono", "Courier New", "Lucida Console";
   text-decoration: none;
-  font-family: "VCR OSD Mono";
-  font-size: 1.2em;
-  word-spacing: -5px;
-  padding-left: 10px;
-  padding-bottom: 1vh;
-  background: black;
-  width: 100vw;
-  color: #ff0000;
-  position: fixed;
-  display: inline-block;
-  z-index: 2;
+  color: white;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 992px) {
   nav.desktop { display: none; }
-  .icon {display: block;}
-  nav.mobile { display: block; }
-  } 
+  nav.mobile {display: flex;}
+} 
 
 /* Styling for home page */
 #home-div {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #000000;
-  padding: 5vh 1vw 3vh 1vw;
-  align-items: center;
-  background-image: url("./images/infected.png");
   background-color: black;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: right 8px;
+  align-items: center;
+  justify-content: center;
 }
 
-#title > p {
-  font-size: 12vh;
-  padding: 10px;
-  font-family: "DotGothic16";
-  text-shadow: red 0px 0px 10px;
-  line-height: normal;
-  text-align: center;
-  color: #ff0000;
-  margin-block-start: 0;
+#home-div > h1 {
+  color: white;
+  font-size: max(48px, 10vw);
+  margin-bottom: 0;
+  margin-top: 5vh;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Blacklisted", sans-serif;
 }
 
-@media screen and (max-width: 550px) {
-    #title > p {
-      margin-block-start: 0;
-      font-size: 6vh;
-    }
+#home-div > p {
+  color: white;
+  font-size: max(20px, 2vw);
+  font-weight: 300;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+}
 
-    #home-div {
-      background-image: url("./images/evildead.png");
-    }
-  } 
+#profile-icons {
+  font-size: max(48px, 3vw);
+}
 
-#start {
-  font-size: 5vh;
-  text-align: center;
-  font-family: "VCR OSD Mono";
-  position: absolute;
-  text-shadow: black 0px 0px 10px;
-  color: #ff0000;
-  bottom: 0;
+#profile-icons > a {
+  margin-left: 0.25vw;
+  margin-right: 0.25vw;
+  color: white;
+  text-decoration: none;
+}
+
+#profile-icons > a:hover {
+  color: red;
+}
+
+#down-arrow > a {
+  margin-top: 15vh;
+  color: white;
+  text-decoration: none;
+  font-size: 48px;
+  animation: updown 2s ease infinite;
+}
+
+#down-arrow > a:hover {
+  color: red;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }
 
 /* ABOUT ME*/
@@ -185,7 +206,7 @@ nav.mobile {
 }
 
 #profile-picture-container > img {
-  border-radius: 50%;
+  border-radius: 100%;
   max-width: 100%;
 }
 
@@ -197,8 +218,8 @@ nav.mobile {
 
 #aboutme > .section-content > article > h1 {
   color: #fff;
-  font-size: 5vh;
-  font-family: "VCR OSD Mono";
+  font-size: max(4vh, 30px);
+  font-family: "UAV OSD Mono";
   margin-block-end: 0.5em;
 }
 
@@ -215,7 +236,7 @@ nav.mobile {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 992px) {
   #aboutme > .section-content {
     flex-direction: column;
   }
