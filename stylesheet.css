@@ -92,15 +92,16 @@ nav.mobile > a > img {
 #nav-elements-mobile {
   display: none;
   font-size: 30px;
-  flex: 2;
+  /* flex: 2; */
   padding: 0;
   flex-direction: column;
   align-items: center;
 }
 
-#nav-elements-mobile > li {
+#nav-elements-mobile > li { 
   list-style-type: none;
   flex: 1;
+  padding: min(2vh, 20px);
 }
 
 #nav-elements-mobile > li > a {
