@@ -172,6 +172,10 @@ nav.mobile > a > img {
   color: red;
 }
 
+#down-arrow > a:visited {
+  color: white;
+}
+
 @keyframes updown {
   0% {
     transform: translateY(-50%);
@@ -219,7 +223,7 @@ nav.mobile > a > img {
 
 #aboutme > .section-content > article > h1 {
   color: #fff;
-  font-size: max(4vh, 30px);
+  font-size: max(3vh, 24px);
   font-family: "UAV OSD Mono";
   margin-block-end: 0.5em;
 }
