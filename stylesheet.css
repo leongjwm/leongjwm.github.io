@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  padding: 0px max(3vw, 30px);
+  padding: 42px max(3vw, 30px);
   background-color: black;
 }
 
@@ -86,7 +86,9 @@ nav.mobile {
 nav.mobile > a > img {
   height: 36px;
   width: 36px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 #nav-elements-mobile {
