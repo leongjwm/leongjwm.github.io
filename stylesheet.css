@@ -58,8 +58,8 @@ nav.desktop {
 #nav-elements-desktop > li > a {
   text-decoration: none;
   font-family: "UAV OSD Mono", "Courier New", "Lucida Console";
-  font-size: 1em;
-  padding: 1vw;
+  font-size: 1.25em;
+  padding: 2vw;
   word-spacing: -5px;
   color: white;
 }
