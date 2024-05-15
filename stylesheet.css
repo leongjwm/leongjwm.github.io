@@ -207,14 +207,14 @@ nav.mobile > a > img {
 
 #profile-picture-container {
   flex: 1;
-  width: 200px;
+  width: 250px;
   display: flex;
   align-items: center;
 }
 
 #profile-picture-container > img {
   border-radius: 100%;
-  max-width: 100%;
+  max-width: max(250px, 100%);
 }
 
 #aboutme > .section-content > article {
