@@ -16,6 +16,8 @@ body {
 section {
   padding: 44px max(3vw, 30px);
   background-color: black;
+  font-size: 24px;
+  border-bottom: 1px solid #adadad;
 }
 
 /* Special fonts*/
@@ -118,7 +120,7 @@ nav.mobile > a > img {
 } 
 
 /* Styling for home page */
-#home-div {
+#home {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -127,7 +129,7 @@ nav.mobile > a > img {
   justify-content: center;
 }
 
-#home-div > h1 {
+#home > h1 {
   color: white;
   font-size: max(48px, 10vw);
   margin-bottom: 0;
@@ -137,7 +139,7 @@ nav.mobile > a > img {
   font-family: "Blacklisted", sans-serif;
 }
 
-#home-div > p {
+#home > p {
   color: white;
   font-size: max(20px, 2vw);
   font-weight: 300;
@@ -191,15 +193,14 @@ nav.mobile > a > img {
 }
 
 /* ABOUT ME*/
-#aboutme > header {
+/* #aboutme > header {
   color: #fff;
   font-size: 5vh;
   font-family: "VCR OSD Mono";
-}
+} */
 
 #aboutme > .section-content {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,14 +208,14 @@ nav.mobile > a > img {
 
 #profile-picture-container {
   flex: 1;
-  width: 250px;
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 #profile-picture-container > img {
   border-radius: 100%;
-  max-width: max(250px, 100%);
+  max-width: max(400px, 25vw);
 }
 
 #aboutme > .section-content > article {
@@ -225,9 +226,9 @@ nav.mobile > a > img {
 
 #aboutme > .section-content > article > h1 {
   color: #fff;
-  font-size: max(3vh, 24px);
   font-family: "UAV OSD Mono";
   margin-block-end: 0.5em;
+  font-size: 40px;
 }
 
 #aboutme > .section-content > article > p {
@@ -243,16 +244,85 @@ nav.mobile > a > img {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #aboutme > .section-content {
     flex-direction: column;
   }
 
   #profile-picture-container {
     margin: 10px;
+    width: 250px;
+  }
+
+  #profile-picture-container > img {
+    max-width: 250px;
   }
 
   #aboutme > .section-content > article {
     margin: auto;
+    padding: 0 2rem;
+  }
+
+  #aboutme > .section-content > article > h1 {
+    color: #fff;
+    font-family: "UAV OSD Mono";
+    margin-block-end: 0.5em;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #aboutme > .section-content > article > p {
+    font-size: 20px;
+  }
+}
+
+#skills > .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills > .section-title > h1 {
+  color: #fff;
+  font-family: "UAV OSD Mono";
+  margin-block-end: 0.5em;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+#skills > h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-block-end: 0.5em;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block-end: 4em;
+}
+
+.tech-stack > img {
+  width: max(200px, 20vw);
+  height: max(200px, 20vh);
+}
+
+@media screen and (max-width: 1025px) {
+  .tech-stack {
+    justify-content: space-evenly;
+    margin-block-end: 3em;
+  }
+
+  #skills {
+    padding: 44px 3vw;
+  }
+
+  .tech-stack > img {
+    width: max(110px, 30vw);
+    height: 15vh;
   }
 }
