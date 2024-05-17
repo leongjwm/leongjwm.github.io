@@ -1,5 +1,5 @@
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function clickHamburgerMenu() {
+function clickNavMobile() {
   var x = document.getElementById("nav-elements-mobile");
   var y = document.getElementsByClassName("mobile")[0];
   if (x.style.display === "flex") {
