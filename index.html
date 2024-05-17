@@ -18,7 +18,7 @@
     <!--Navigation Bar: Desktop-->
     <nav class="desktop">
       <ul id="nav-elements-desktop">
-          <li><a href="#home-div" class="button">HOME</a></li>  
+          <li><a href="#home" class="button">HOME</a></li>  
           <li><a href="#aboutme" class="button">ABOUT ME</a></li>
           <li><a href="#skills" class="button">SKILLS</a></li>
           <li><a href="#projects" class="button">PROJECTS</a></li>
@@ -27,17 +27,17 @@
 
     <!--Navigation Bar: Mobile-->
     <nav class="mobile">
-      <a href="javascript:void(0);" onclick="clickHamburgerMenu()"><img src="./icons/hamburger-menu.svg" id="nav-svg"></a>
+      <a href="javascript:void(0);" onclick="clickNavMobile()"><img src="./icons/hamburger-menu.svg" id="nav-svg"></a>
         <ul id="nav-elements-mobile">
-            <li><a href="#home-div" onclick="clickHamburgerMenu()" class="button">HOME</a></li>  
-            <li><a href="#aboutme" onclick="clickHamburgerMenu()" class="button">ABOUT ME</a></li>
-            <li><a href="#skills" onclick="clickHamburgerMenu()" class="button">SKILLS</a></li>
-            <li><a href="#projects" onclick="clickHamburgerMenu()" class="button">PROJECTS</a></li>
+            <li><a href="#home" onclick="clickNavMobile()" class="button">HOME</a></li>  
+            <li><a href="#aboutme" onclick="clickNavMobile()" class="button">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="clickNavMobile()" class="button">SKILLS</a></li>
+            <li><a href="#projects" onclick="clickNavMobile()" class="button">PROJECTS</a></li>
         </ul>
     </nav>
 
     <!--HOME PAGE-->
-    <div id="home-div">
+    <div id="home">
       <h1> Data Portfolio </h1>
       <p> Leong Jia Wei, Marcus &#8226; Data Analyst </p>
       <div id="profile-icons">
@@ -73,6 +73,58 @@
             While away from work, I lead an active lifestyle with activities such as calisthenics and running!
           </p>
         </article>
+      </div>
+    </section>
+
+    <!--SKILLS-->
+    <section id="skills">
+      <div class="section-title">
+        <h1>
+          SKILLS
+          <hr>
+        </h1>
+      </div>
+
+      <h2>
+        Programming Languages
+      </h2>
+      <div class="tech-stack">
+        <img src="./icons/python-logo.svg" alt="python-logo">
+        <img src="./icons/rstudio-logo.svg" alt="r-logo">
+        <img src="./icons/java-logo.svg" alt="java-logo">
+      </div>
+
+      <h2>
+        Data Visualisation
+      </h2>
+      <div class="tech-stack">
+        <img src="./icons/tableau-logo.svg" alt="tableau-logo">
+        <img src="./icons/powerbi-logo.svg" alt="powerbi-logo" id="powerbi-logo">
+      </div>
+
+      <h2>
+        Database Management
+      </h2>
+      <div class="tech-stack">
+        <img src="./icons/mysql-logo.svg" alt="mysql-logo">
+        <img src="./icons/mongodb-logo.svg" alt="mongodb-logo">
+      </div>
+
+      <h2>
+        Machine Learning
+      </h2>
+      <div class="tech-stack">
+        <img src="./icons/sklearn-logo.svg" alt="sklearn-logo">
+        <img src="./icons/pytorch-logo.svg" alt="pytorch-logo">
+        <img src="./icons/tensorflow-logo.svg" alt="tensorflow-logo">
+      </div>
+
+      <h2>
+        Deployment
+      </h2>
+      <div class="tech-stack">
+        <img src="./icons/docker-logo.svg" alt="docker-logo">
+        <img src="./icons/fastapi-logo.svg" alt="fastapi-logo">
       </div>
     </section>
 
