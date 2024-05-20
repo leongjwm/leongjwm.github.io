@@ -27,7 +27,7 @@
 
     <!--Navigation Bar: Mobile-->
     <nav class="mobile">
-      <a href="javascript:void(0);" onclick="clickNavMobile()"><img src="./icons/hamburger-menu.svg" id="nav-svg"></a>
+      <a href="javascript:void(0);" onclick="clickNavMobile()"><img src="./icons/hamburger-menu.svg" alt=hamburger-menu id="nav-svg"></a>
         <ul id="nav-elements-mobile">
             <li><a href="#home" onclick="clickNavMobile()" class="button">HOME</a></li>  
             <li><a href="#aboutme" onclick="clickNavMobile()" class="button">ABOUT ME</a></li>
@@ -126,6 +126,92 @@
         <img src="./icons/docker-logo.svg" alt="docker-logo">
         <img src="./icons/fastapi-logo.svg" alt="fastapi-logo">
       </div>
+    </section>
+
+    <!--PROJECTS-->
+    <section id="projects">
+      <div class="section-title">
+        <h1>
+          PROJECTS
+          <hr>
+        </h1>
+      </div>
+
+      <div class="projects-container">
+        <div class="project-showcase">
+          <div id="project-picture-container">
+            <img src="images/ship-detection-yolov3.png" alt="shipdetection-picture"/>
+          </div>
+          <article>
+            <h1>
+                Ship Detection with YOLOv3
+            </h1>
+            <div class="skills-required">
+              <div class="skill-used"> Object Detection </div>
+              <div class="skill-used"> PyTorch </div>
+              <div class="skill-used"> Deep Learning </div>
+              <div class="skill-used"> Deployment </div>
+            </div>
+            <p>
+              Using footage from security cameras which capture ships within Singapore's vicinity, we experimented with a combination of different models and techniques such as YOLOv3, DETR, Faster RCNN, WBF and TTA to determine which yields the best results in detecting Vessels and Kayaks. The base YOLOv3 solution was containerised with Docker.
+            </p>
+          </article>
+        </div>
+
+        <div class="project-showcase">
+          <div id="project-picture-container">
+            <img src="images/buttersnapped.png" alt="buttersnapped-picture"/>
+          </div>
+          <article>
+            <h1>
+                Image Classification of Butterfly Species
+            </h1>
+            <div class="skills-required">
+              <div class="skill-used"> TensorFlow </div>
+              <div class="skill-used"> Image Classification </div>
+              <div class="skill-used"> Web Scraping </div>
+              <div class="skill-used"> Deep Learning </div>
+              <div class="skill-used"> Object Detection </div>
+              <div class="skill-used"> Traditional ML </div>
+            </div>
+            <p>
+              With butterfly images scraped from Flickr, we analyse how our proposed model, a Convolutional Neural Network (CNN) with Transfer Learning performs against other baseline models (e.g, SVM) in classifying different species of butterflies. We also evaluate whether the use of object detection or deblurring techniques helps improve the prediction accuracy of the CNN.
+            </p>
+            <!-- <p>
+              Skills required: Tensorflow, Object Detection, Web Scraping, Traditional Machine Learning, Deep Learning
+            </p> -->
+          </article>
+        </div>
+
+        <div class="project-showcase">
+          <div id="project-picture-container">
+            <img src="images/nlp-multi-doc.png" alt="nlp-multi-doc-picture"/>
+          </div>
+          <article>
+            <h1>
+                Natural Language Processing with Multi-Document Understanding
+            </h1>
+            <div class="skills-required">
+              <div class="skill-used"> PyTorch </div>
+              <div class="skill-used"> Deployment </div>
+              <div class="skill-used"> Deep Learning </div>
+              <div class="skill-used"> Natural Language Processing </div>
+            </div>
+            <p>
+              For my final year internship, I was tasked to complete an end-to-end Entity Direct Speech Quotation Extraction product. This involved putting together several NLP tasks such as Quotation Extraction and Attribution, Entity Extraction, Coreference Resolution, and Knowledge Representation. The final product was containerised with Docker and deployed via FastAPI.
+            </p>
+            <!-- <p>
+              Skills required: PyTorch, Natural Language Processing, Deployment, Deep Learning
+            </p> -->
+          </article>
+        </div>
+      </div>
+
+      <!-- <div class="overflow-menu">
+        <div class="projects-page" pagenum="0" onclick=clickPageNum()></div>
+        <div class="projects-page" pagenum="1" onclick=clickPageNum()></div>
+        <div class="projects-page" pagenum="2" onclick=clickPageNum()></div>
+      </div> -->
     </section>
 
   </body>
