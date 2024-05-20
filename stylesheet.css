@@ -27,6 +27,11 @@ section {
 }
 
 @font-face {
+  font-family: "Kenyan Coffee Reg";
+  src: url("./fonts/kenyan_coffee_rg.otf") format('opentype');
+}
+
+@font-face {
   font-family: "Blacklisted";
   src: url("./fonts/Blacklisted.ttf") format('truetype');
 }
@@ -38,9 +43,9 @@ nav.desktop {
   position: fixed;
   display: flex;
   flex-direction: row;
-  height: 5vh;
+  height: 25px;
   padding: 1.2vh 2vw;
-  background-color: #131516;
+  background-color: darkslategray;
   align-items: center;
   z-index: 100;
 }
@@ -81,7 +86,7 @@ nav.mobile {
   flex-direction: column;
   width: 100%;
   display: none;
-  background-color: #131516;
+  background-color: darkslategray;
   z-index: 100;
 }
 
@@ -235,14 +240,14 @@ nav.mobile > a > img {
   color: #fff
 }
 
-.less-emphasis {
+/* .less-emphasis {
   font-size: max(0.8rem, 12px);
   color: #9e9e9e;
 }
 
 .less-emphasis > a {
   text-decoration: underline;
-}
+} */
 
 @media screen and (max-width: 992px) {
   #aboutme > .section-content {
@@ -276,13 +281,13 @@ nav.mobile > a > img {
   }
 }
 
-#skills > .section-title {
+.section-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#skills > .section-title > h1 {
+.section-title > h1 {
   color: #fff;
   font-family: "UAV OSD Mono";
   margin-block-end: 0.5em;
@@ -324,5 +329,110 @@ nav.mobile > a > img {
   .tech-stack > img {
     width: max(110px, 30vw);
     height: 15vh;
+  }
+}
+
+#projects > .projects-container > .project-showcase {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+#project-picture-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#project-picture-container > img {
+  max-width: max(300px, 20vw);
+}
+
+#projects > .projects-container > .project-showcase > article {
+  flex: 2;
+  margin: max(20px, 5vmin);
+  padding: 0 3rem;
+}
+
+.skill-used {
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 0.5vw;
+  margin-bottom: 1vh;
+  background-color: coral;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  text-align: center;
+  display: inline-block;
+}
+
+#projects > .projects-container > .project-showcase > article > h1 {
+  color: #fff;
+  font-family: "Kenyan Coffee Reg";
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+  font-size: 72px;
+}
+
+#projects > .projects-container > .project-showcase > article > p {
+  color: #fff
+}
+
+.overflow-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-page {
+  border-radius: 100%;
+  background-color: white;
+  height: 0.5em;
+  width: 0.5em;
+  margin: 8px;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 1025px) {
+  #projects > .projects-container > .project-showcase {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project-picture-container {
+    margin: 10px;
+    width: 250px;
+  }
+
+  #project-picture-container > img {
+    max-width: 250px;
+  }
+
+  #projects > .projects-container > .project-showcase > article {
+    margin: auto;
+    padding: 0 2rem;
+  }
+
+  #projects > .projects-container > .project-showcase > article > h1 {
+    color: #fff;
+    margin-block-end: 0.5em;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #projects > .projects-container > .project-showcase > article > p {
+    font-size: 20px;
+  }
+
+  .skills-required {
+    align-items: center;
+  }
+
+  .skill-used {
+    font-size: 0.9rem;
   }
 }
